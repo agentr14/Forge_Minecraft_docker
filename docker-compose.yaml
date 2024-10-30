@@ -1,0 +1,14 @@
+
+ version: '3.8'
+
+ services:
+   minecraft:
+     image: minecraft-server
+     container_name: minecraft_server
+     ports:
+       - "25565:25565"
+     volumes:
+       - ./servers:/home/servers
+     command: >
+       sh -c "cd /home/servers/1.20.1 && sh run.sh" #edit 1.20.1 to what ever you named the folder that contains the server files 
+     restart: unless-stopped
