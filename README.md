@@ -1,5 +1,7 @@
 # Forge_Minecraft_docker
 Compose File for running Minecraft server as a Docker Container 
+
+**Its assumed that you already have docker and docker compose installed**
 1. run docker-compose up
 2. stop the container with ctrl C 
 3. edit the eula to true 
